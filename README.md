@@ -1,6 +1,6 @@
 # Transcribe recordings without having to pause and play it manually
 
->Also available in [spanish]() / También disponible en [castellano]().
+>Also available in [spanish](./LEEME.md) / También disponible en [castellano](./LEEME.md).
 
 Are you tired of transcribing recordings because you have to pause, minimize, copy, maximize, play, minimize, copy,...? Here is a nice solution:
 A simple python script to watch a video or a recorded audio in VLC and pause and play it automatically. Perfect for students who have virtual lectures and have to copy the video/audio content. You can set the time of playing and the time you need to copy while is paused.
@@ -41,8 +41,18 @@ sudo apt-get install vlc
 You can download `paustart.py` from this repository. Make sure to enter the video/audio path and to set the pause and play times that fit with you.
 
 * To get the path of the video/audio you can execute the command `pwd` and copy it to the `line 18`, also, if your video/audio file's name is different to `video.mp4` you will have to replace it in `line 19`.
-* If you want to set the pause duration, change `line 23`.
-* If you want to set the playing duration, change `line 25`.
+    ```python
+    path='PATH'
+    proccess = subprocess.Popen(['vlc', path + 'video.mp4'])
+    ```
+* If you want to set the pause duration, change `line 23`. In this example it is 4 seconds.
+    ```python
+    time.sleep(4)
+    ```
+* If you want to set the playing duration, change `line 25`. In this example it is 3 seconds.
+    ```python
+    time.sleep(3)
+    ```
 
 Once everything is set up, you can execute the script using the command:
 ```
