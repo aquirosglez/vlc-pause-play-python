@@ -1,6 +1,6 @@
 # Transcribe recordings without having to pause and play it manually
 
->Also available in [spanish](./LEEME.md) / También disponible en [castellano](./LEEME.md).
+>Also available in [Spanish](./LEEME.md) / También disponible en [castellano](./LEEME.md).
 
 Are you tired of transcribing recordings because you have to pause, minimize, copy, maximize, play, minimize, copy,...? Here is a nice solution:
 A simple python script to watch a video or a recorded audio in VLC and pause and play it automatically. Perfect for students who have virtual lectures and have to copy the video/audio content. You can set the time of playing and the time you need to copy while is paused.
